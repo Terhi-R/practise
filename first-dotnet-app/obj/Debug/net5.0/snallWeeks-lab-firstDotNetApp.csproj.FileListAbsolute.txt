@@ -1,0 +1,16 @@
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/bin/Debug/net5.0/snallWeeks-lab-firstDotNetApp
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/bin/Debug/net5.0/snallWeeks-lab-firstDotNetApp.deps.json
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/bin/Debug/net5.0/snallWeeks-lab-firstDotNetApp.runtimeconfig.json
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/bin/Debug/net5.0/snallWeeks-lab-firstDotNetApp.runtimeconfig.dev.json
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/bin/Debug/net5.0/snallWeeks-lab-firstDotNetApp.dll
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/bin/Debug/net5.0/snallWeeks-lab-firstDotNetApp.pdb
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/snallWeeks-lab-firstDotNetApp.csproj.AssemblyReference.cache
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/snallWeeks-lab-firstDotNetApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/snallWeeks-lab-firstDotNetApp.AssemblyInfoInputs.cache
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/snallWeeks-lab-firstDotNetApp.AssemblyInfo.cs
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/snallWeeks-lab-firstDotNetApp.csproj.CoreCompileInputs.cache
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/snallWeeks-lab-firstDotNetApp.dll
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/refint/snallWeeks-lab-firstDotNetApp.dll
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/snallWeeks-lab-firstDotNetApp.pdb
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/snallWeeks-lab-firstDotNetApp.genruntimeconfig.cache
+/Users/terhiraudaskoski/Documents/salt/first-dotnet-app/obj/Debug/net5.0/ref/snallWeeks-lab-firstDotNetApp.dll

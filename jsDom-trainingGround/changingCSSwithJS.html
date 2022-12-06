@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Training Ground</title>
+    <style>
+      .mainResult {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 80px;
+      }
+      .negativeResult {
+        background-color: red;
+        color: white;
+      }
+      .positiveResult {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="mainResult">1000</h1>
+      <h1 class="mainResult">-1000</h1>
+      <h1 class="mainResult">A name - not a number</h1>
+    </main>
+    <script>
+      function selectClass(str) {
+        let chosenClass = document.querySelectorAll("." + str);
+        for (let i = 0; i < chosenClass.length; i++) {
+          let contentOf = chosenClass[i];
+          let num = Number(contentOf.textContent);
+          if (num > 0) {
+            chosenClass[i].className += " positiveResult";
+            continue;
+          } else {
+            chosenClass[i].className += " negativeResult";
+          }
+        }
+      }
+
+      selectClass("mainResult");
+    </script>
+  </body>
+</html>

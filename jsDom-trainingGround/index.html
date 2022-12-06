@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Training Ground</title>
+
+    <script src="functions.js"></script>
+  </head>
+  <body>
+    <script>
+      console.log("Salt> Hello there");
+    </script>
+    <main>
+      <div name="content" class="big bold bright">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+        ut a veritatis. Adipisci cumque consectetur, dolores sed inventore ipsa
+        culpa saepe quam iste ea eius illo maxime magni sequi. Ut dolor corporis
+        enim, voluptas repellendus est? Accusantium voluptatum temporibus
+        exercitationem fugiat vitae quisquam quis officiis rem beatae
+        repellendus aspernatur saepe, quibusdam facere labore praesentium iure?
+        Optio illo ex necessitatibus tenetur voluptatibus totam accusamus iusto
+        cupiditate quibusdam ab consequuntur a sit eum quis culpa repellendus,
+        praesentium sequi. Quasi nemo ea repellendus dolores aliquam nam,
+        deserunt facilis quis. Sed, pariatur numquam? Illo, dicta voluptatibus
+        excepturi fuga eveniet omnis tenetur aliquid illum quaerat!
+      </div>
+      <br />
+      <div id="companyName" class="big bold">
+        Ex impedit at pariatur accusantium, sed tenetur dignissimos a optio,
+        incidunt reprehenderit quibusdam magnam ducimus vitae, unde atque
+        possimus vel voluptatem libero? Neque atque praesentium eum nemo fugit
+        quos inventore soluta laborum temporibus ducimus vitae recusandae
+        necessitatibus quaerat voluptate unde dicta odit, incidunt tempore qui
+        iure dolorem magnam. Cupiditate mollitia, expedita blanditiis architecto
+        cum consequatur non corporis, laboriosam repellendus vero reprehenderit
+        officia sequi omnis illum doloremque enim natus dolorem aut? Esse nobis
+        doloribus vero, sed consequatur perferendis alias ab laboriosam,
+        reiciendis tenetur repellendus sequi, possimus culpa nam! Provident
+        quod, quasi ea nemo temporibus omnis, numquam quidem rem possimus amet
+        reiciendis!
+      </div>
+      <br />
+      <div name="content" class="big">
+        Architecto totam reiciendis voluptates nihil illum exercitationem iste
+        beatae libero voluptas? Assumenda vitae sequi perferendis nostrum veniam
+        a enim rem vero provident quis ratione tempora doloribus voluptates
+        eligendi, corrupti, beatae nisi possimus quod voluptate recusandae!
+        Commodi aut fugit facilis eius id soluta beatae nihil quis voluptas
+        minus ad quod laudantium excepturi sunt non porro reiciendis quibusdam,
+        voluptatum tenetur sed vel recusandae. Natus quisquam tempore quia
+        nobis, itaque magnam laborum porro, harum debitis deleniti aliquam
+        possimus mollitia maxime tempora, dicta excepturi atque adipisci aut et
+        magni fugiat sit! Excepturi fuga, repellat voluptate debitis cum ducimus
+        saepe, praesentium ipsa corporis quasi necessitatibus.
+      </div>
+    </main>
+    <script>
+      const companyName = myFunctions.getCompanyName();
+
+      document.getElementById("companyName").innerHTML = companyName;
+
+      let boldOne = document.getElementsByClassName("bold");
+      for (let i = 0; i < boldOne.length; i++) {
+        boldOne[i].innerHTML += ".. and bold";
+      }
+
+      const companyNameElement = document.querySelector("#companyName");
+      companyNameElement.innerHTML =
+        companyName + " set using a query selector by id";
+
+      const boldSelected = document.querySelectorAll(".bold");
+      for (let i = 0; i < boldSelected.length; i++) {
+        boldSelected[i].innerHTML += "...and bold selected with query";
+      }
+
+      myFunctions.addListInMain(2, "Hello");
+      myFunctions.addListInMainWithAppendChild(6);
+
+      removeDiv("companyName");
+    </script>
+  </body>
+</html>

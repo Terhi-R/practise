@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Training Ground</title>
+    <style>
+      .mainResult {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 80px;
+      }
+      .negativeResult {
+        background-color: red;
+        color: white;
+      }
+      .positiveResult {
+        background-color: green;
+        color: white;
+      }
+    </style>
+    <script>
+      function selectClass(str) {
+        let chosenClass = document.querySelectorAll("." + str);
+        for (let i = 0; i < chosenClass.length; i++) {
+          let contentOf = chosenClass[i];
+          let num = Number(contentOf.textContent);
+          if (num > 0) {
+            chosenClass[i].className += " positiveResult";
+            continue;
+          } else {
+            chosenClass[i].className += " negativeResult";
+          }
+        }
+      }
+
+      function invertColorsOfResults() {
+        let mainResultElements = document.querySelectorAll(".mainResult");
+
+        for (let i = 0; i < mainResultElements.length; i++) {
+          const element = mainResultElements[i];
+          console.log(element.textContent);
+
+          if (element.classList.contains("positiveResult")) {
+            element.classList.remove("positiveResult");
+            element.classList.add("negativeResult");
+            continue;
+          }
+          if (element.classList.contains("negativeResult")) {
+            element.classList.remove("negativeResult");
+            element.classList.add("positiveResult");
+            continue;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1 class="mainResult">1000</h1>
+      <h1 class="mainResult">-1000</h1>
+      <h1 class="mainResult">A name - not a number</h1>
+      <button id="button">Invert colors</button>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("Document is loaded, y'all ;D");
+        selectClass("mainResult");
+      });
+      let buttonClick = document.querySelector("#button");
+      buttonClick.addEventListener("click", () => {
+        invertColorsOfResults();
+      });
+    </script>
+  </body>
+</html>

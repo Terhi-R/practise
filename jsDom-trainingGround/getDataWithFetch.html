@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Data with Fetch</title>
+    <script>
+      function getUsers() {
+        let addResult = document.querySelector("#main");
+        let allNames = "";
+        fetch("https://randomuser.me/api/?gender=female&results=30")
+          .then((response) => response.json())
+          .then((data) => {
+            addResult.innerHTML = data.results.length;
+            let results = data.results;
+            for (let i = 0; i < results.length; i++) {
+              allNames += `<div><h2>${data.results[i].name.first} ${data.results[i].name.last}</h2><img src="${data.results[i].picture.medium}" /></div>`;
+              addResult.innerHTML = allNames;
+            }
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <main id="main"></main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        getUsers();
+      });
+    </script>
+  </body>
+</html>

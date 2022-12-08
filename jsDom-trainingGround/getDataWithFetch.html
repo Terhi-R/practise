@@ -8,7 +8,9 @@
     <script>
       function getUsers() {
         let addResult = document.querySelector("#main");
+        let buttonOfPersons = document.querySelector("#checkPerson");
         let allNames = "";
+        let searchButton = "";
         fetch("https://randomuser.me/api/?gender=female&results=30")
           .then((response) => response.json())
           .then((data) => {
@@ -16,13 +18,18 @@
             let results = data.results;
             for (let i = 0; i < results.length; i++) {
               allNames += `<div><h2>${data.results[i].name.first} ${data.results[i].name.last}</h2><img src="${data.results[i].picture.medium}" /></div>`;
+              searchButton += `<option value="">${data.results[i].name.first} ${data.results[i].name.last}</option>`;
               addResult.innerHTML = allNames;
+              buttonOfPersons.innerHTML = `<option value="">Search</option> ${searchButton}`;
             }
           });
       }
     </script>
   </head>
   <body>
+    <heading
+      ><select id="checkPerson" placeholder="Search..."></select
+    ></heading>
     <main id="main"></main>
     <script>
       document.addEventListener("DOMContentLoaded", () => {

@@ -1,0 +1,4 @@
+{
+    "extends": "salt-typescript",
+    "parserOptions": {"project": "tsconfig.json"}
+}

@@ -7,20 +7,29 @@ namespace webapiDotNetTrainingGround.Controllers;
 [Route("/api/[controller]")]
 public class DevelopersController : ControllerBase
 {
-    private List<Developer> _db;
-    public DevelopersController()
+    public class Db
     {
-        _db = new List<Developer>()
+        public Db()
         {
+            Developers = new List<Developer> {
             new Developer() { Id = 1, Name = "Miele", Email = "miele@student.com"},
             new Developer() { Id = 2, Name = "Matte", Email = "matte@student.com"},
-    };
+        };
+        }
+        public List<Developer> Developers { get; set; }
+
+
+    }
+    private Db _db;
+    public DevelopersController(Db db)
+    {
+        _db = db;
     }
 
     [HttpGet]
     public List<Developer> GetAllDevelopers()
     {
-        return _db;
+        return _db.Developers;
     }
 
     /* 
@@ -34,7 +43,7 @@ public class DevelopersController : ControllerBase
     [HttpGet("{id}")]
     public Developer? GetWantedId(int id)
     {
-        return _db.Find(d => d.Id == id);
+        return _db.Developers.Find(d => d.Id == id);
     }
 
     //For looping through and choosing which Id to look at
@@ -45,14 +54,18 @@ public class DevelopersController : ControllerBase
             return _db.Find(d => d.Id == id);
         }
     */
+
     [HttpPost]
     public IActionResult CreateNewDeveloper(Developer developerToAdd)
     {
-        var nextId = _db.Count + 1;
+        var nextId = _db.Developers.Count + 1;
         developerToAdd.Id = nextId;
-        _db.Add(developerToAdd);
+        _db.Developers.Add(developerToAdd);
 
         return CreatedAtAction(nameof(GetWantedId), new { id = nextId }, developerToAdd);
     }
+
+
+
 
 }

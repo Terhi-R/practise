@@ -1,6 +1,10 @@
+using static webapiDotNetTrainingGround.Controllers.DevelopersController;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var db = new Db();
+builder.Services.AddSingleton<Db>(db);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

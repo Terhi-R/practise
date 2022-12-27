@@ -18,18 +18,23 @@ public class DevelopersController : ControllerBase
         }
         public List<Developer> Developers { get; set; }
 
-
     }
+
     private Db _db;
     public DevelopersController(Db db)
     {
         _db = db;
     }
 
+    public List<Developer> DeveloperResponse()
+    {
+        return _db.Developers;
+    }
+
     [HttpGet]
     public List<Developer> GetAllDevelopers()
     {
-        return _db.Developers;
+        return DeveloperResponse();
     }
 
     /* 
@@ -43,7 +48,7 @@ public class DevelopersController : ControllerBase
     [HttpGet("{id}")]
     public Developer? GetWantedId(int id)
     {
-        return _db.Developers.Find(d => d.Id == id);
+        return DeveloperResponse().Find(d => d.Id == id);
     }
 
     //For looping through and choosing which Id to look at
@@ -56,13 +61,19 @@ public class DevelopersController : ControllerBase
     */
 
     [HttpPost]
-    public IActionResult CreateNewDeveloper(Developer developerToAdd)
+    public IActionResult CreateNewDeveloper(CreateDeveloperRequest request)
     {
-        var nextId = _db.Developers.Count + 1;
-        developerToAdd.Id = nextId;
-        _db.Developers.Add(developerToAdd);
+        var nextId = DeveloperResponse().Count + 1;
+        var newDev = new Developer()
+        {
+            Id = nextId,
+            Name = request.Name,
+            Email = request.Email,
+        };
 
-        return CreatedAtAction(nameof(GetWantedId), new { id = nextId }, developerToAdd);
+        DeveloperResponse().Add(newDev);
+
+        return CreatedAtAction(nameof(GetWantedId), new { id = nextId }, newDev);
     }
 
 

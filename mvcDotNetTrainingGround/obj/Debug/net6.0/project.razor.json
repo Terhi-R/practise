@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/terhiraudaskoski/Documents/salt/mvcDotNetTrainingGround/Views/Developers/Create.cshtml",
+      "TargetPath": "Views\\Developers\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/terhiraudaskoski/Documents/salt/mvcDotNetTrainingGround/Views/Developers/Index.cshtml",
       "TargetPath": "Views\\Developers\\Index.cshtml",
       "FileKind": "mvc"
@@ -16335,6 +16340,11 @@
     {
       "FilePath": "/Users/terhiraudaskoski/Documents/salt/mvcDotNetTrainingGround/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/terhiraudaskoski/Documents/salt/mvcDotNetTrainingGround/Views/Developers/Details.cshtml",
+      "TargetPath": "Views\\Developers\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],

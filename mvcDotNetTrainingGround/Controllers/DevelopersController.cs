@@ -29,4 +29,31 @@ public class DevelopersController : Controller
         return View(_db.Developers);
     }
 
+    public IActionResult Details(int id)
+    {
+        return View(_db.Developers.Find(d => d.Id == id));
+    }
+
+
+    public IActionResult Create()
+    {
+
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(CreateNewDeveloperViewModel viewModel)
+    {
+        var nextId = _db.Developers.Count + 1;
+        var developerToAdd = new Developer()
+        {
+            Id = nextId,
+            Email = viewModel.Email,
+            Name = viewModel.Name,
+        };
+
+        _db.Developers.Add(developerToAdd);
+
+        return RedirectToAction(nameof(Index));
+    }
 }

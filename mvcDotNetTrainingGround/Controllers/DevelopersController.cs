@@ -25,7 +25,6 @@ public class DevelopersController : Controller
 
     public IActionResult Index()
     {
-
         return View(_db.Developers);
     }
 
@@ -37,23 +36,28 @@ public class DevelopersController : Controller
 
     public IActionResult Create()
     {
-
         return View();
     }
 
     [HttpPost]
     public IActionResult Create(CreateNewDeveloperViewModel viewModel)
     {
-        var nextId = _db.Developers.Count + 1;
-        var developerToAdd = new Developer()
-        {
-            Id = nextId,
-            Email = viewModel.Email,
-            Name = viewModel.Name,
-        };
 
-        _db.Developers.Add(developerToAdd);
+        var nextId = _db.Developers.Count + 1;
+        if (ModelState.IsValid)
+        {
+
+            var developerToAdd = new Developer()
+            {
+                Id = nextId,
+                Name = viewModel.Name,
+                Email = viewModel.Email,
+            };
+
+            _db.Developers.Add(developerToAdd);
+        }
 
         return RedirectToAction(nameof(Index));
+
     }
 }

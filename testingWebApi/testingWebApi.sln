@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvcDotNetTrainingGround", "mvcDotNetTrainingGround\mvcDotNetTrainingGround.csproj", "{D2D92A13-D899-4D6E-B42B-4519F2FE26D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testingWebApi", "mvcDotNetTrainingGround.Tests\testingWebApi.csproj", "{910FDDB6-7D7A-4253-AA62-8CB91942B6F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2D92A13-D899-4D6E-B42B-4519F2FE26D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D92A13-D899-4D6E-B42B-4519F2FE26D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D92A13-D899-4D6E-B42B-4519F2FE26D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D92A13-D899-4D6E-B42B-4519F2FE26D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{910FDDB6-7D7A-4253-AA62-8CB91942B6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910FDDB6-7D7A-4253-AA62-8CB91942B6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910FDDB6-7D7A-4253-AA62-8CB91942B6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910FDDB6-7D7A-4253-AA62-8CB91942B6F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

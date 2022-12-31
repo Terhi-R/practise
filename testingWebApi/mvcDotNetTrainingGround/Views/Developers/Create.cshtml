@@ -1,0 +1,16 @@
+@model CreateNewDeveloperViewModel
+
+<h1>Create a new developer!</h1>
+<form asp-controller="Developers" asp-action="Create" method="post">
+    @Html.DisplayNameFor(m => m.Name): @Html.TextBoxFor(m => m.Name)
+    <br />
+    <br />
+    @Html.DisplayNameFor(m => m.Email): @Html.TextBoxFor(m => m.Email)
+    <br />
+    <br />
+    <button type="submit">Create a new developer</button>
+</form>
+
+<a asp-controller="Developers" asp-action="Index">
+    Back to Home
+</a>

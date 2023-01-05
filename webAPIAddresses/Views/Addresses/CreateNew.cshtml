@@ -1,0 +1,20 @@
+@model CreateNew;
+
+
+<form asp-controller="Addresses" asp-action="Create" method="post" class="newAddressForm">
+    @Html.DisplayNameFor(m => m.Street): @Html.TextBoxFor(m => m.Street)
+    <br />
+    <br />
+    @Html.DisplayNameFor(m => m.StreetNo): @Html.TextBoxFor(m => m.StreetNo)
+    <br />
+    <br />
+    @Html.DisplayNameFor(m => m.PostCode): @Html.TextBoxFor(m => m.PostCode)
+    <br />
+    <br />
+    @Html.DisplayNameFor(m => m.City): @Html.TextBoxFor(m => m.City)
+    <br />
+    <br />
+    <button type="submit">Create new address</button>
+</form>
+
+<a asp-controller="Addresses" asp-action="Index">Back to Home</a>

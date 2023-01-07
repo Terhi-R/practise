@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr class="tableRow">
+          <th>Id</th>
+          <th>Street</th>
+          <th>Street Nr</th>
+          <th>Post Code</th>
+          <th>City</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody class="rows"></tbody>
+      <tr class="rows" id="rows"></tr>
+    </table>
+
+    <a href="createNew.html" class="links">Create New Address</a>
+    <script type="module" src="index.js"></script>
+    <script type="text/json" src="script.js"></script>
+  </body>
+</html>

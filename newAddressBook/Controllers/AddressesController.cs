@@ -1,5 +1,9 @@
+using System.Data;
+using System.Diagnostics;
+using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using newAddressBook.Models;
+using Newtonsoft.Json;
 
 namespace newAddressBook.Controllers;
 
@@ -7,60 +11,68 @@ namespace newAddressBook.Controllers;
 public class AddressesController : Controller
 {
 
-    public class Addr
+    string apiURL = "https://localhost:7246/api/";
+
+    public async Task<IActionResult> Index()
     {
-        public Addr()
+        DataTable dt = new DataTable();
+        using (var client = new HttpClient())
         {
-            Addresses = new List<Address>() {
-            new Address() {Street = "Ospelia", StreetNo = 11, PostCode = 1481, City = "Hagan"},
-            new Address() {Street = "Ospelia", StreetNo = 12, PostCode = 1481, City = "Hagan"},
-            new Address() {Street = "Ospelia", StreetNo = 13, PostCode = 1481, City = "Hagan"},
-        };
+            client.BaseAddress = new Uri(apiURL);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage getData = await client.GetAsync("Addresses");
+            if (getData.IsSuccessStatusCode)
+            {
+                string results = getData.Content.ReadAsStringAsync().Result;
+                dt = JsonConvert.DeserializeObject<DataTable>(results);
+            }
+            else
+            {
+                Console.WriteLine("Error calling webAPI");
+            }
         }
-
-        public List<Address> Addresses { get; set; }
-    }
-
-    private Addr _ad;
-
-    public AddressesController(Addr addr)
-    {
-        _ad = addr;
-    }
-
-    public IActionResult Index()
-    {
-        return View(_ad.Addresses);
     }
     public IActionResult CreateNew()
     {
         return View();
     }
 
-    [HttpPost]
-    public IActionResult Create(CreateNew createAddress)
+
+
+    /*
+
+      public IActionResult AddressId(int id)
     {
-        if (!ModelState.IsValid)
+        return View(_ad.Addresses.Find(a => a.Id == id));
+    }
+
+        [HttpPost]
+        public IActionResult Create(CreateNew createAddress)
         {
-            return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var nextId = _ad.Addresses.Count + 1;
+
+            var newAddress = new Address()
+            {
+                Id = nextId,
+                Street = createAddress.Street,
+                StreetNo = createAddress.StreetNo,
+                PostCode = createAddress.PostCode,
+                City = createAddress.City
+            };
+            _ad.Addresses.Add(newAddress);
+            return RedirectToAction(nameof(Index));
         }
 
-        var newAddress = new Address()
+        [HttpPost]
+        public IActionResult Delete(int nr)
         {
-            Street = createAddress.Street,
-            StreetNo = createAddress.StreetNo,
-            PostCode = createAddress.PostCode,
-            City = createAddress.City
-        };
-        _ad.Addresses.Add(newAddress);
-        return RedirectToAction(nameof(Index));
-    }
+            var chosenAddress = _ad.Addresses.Find(a => a.StreetNo == nr);
 
-    [HttpPost]
-    public IActionResult Delete(int nr)
-    {
-        var chosenAddress = _ad.Addresses.Find(a => a.StreetNo == nr);
-
-        return RedirectToAction(nameof(Index));
-    }
+            return RedirectToAction(nameof(Index));
+        }*/
 }

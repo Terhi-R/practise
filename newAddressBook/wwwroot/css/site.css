@@ -16,3 +16,20 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.tableRow {
+  background: pink;
+}
+
+.rows {
+  background: rgb(231, 215, 218);
+}
+
+table {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.links {
+  text-decoration: none;
+}

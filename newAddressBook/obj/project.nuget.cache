@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LEFKy1L7gSDumHzmZHMf7VMwwobN55D8LFGaH9TFYcuC26fzbY/JBkq4A/IhG8lwtHfQhWA4tmJdb7/uc8r2jA==",
+  "dgSpecHash": "3vKEWb5AzWmogEBtvam2MEG+lLGR7Ktk3Z1QlvLJr1nJO1Z/jGN3SkvtUPYQRG98PgaYmeyouv7fBpDd7WlI/w==",
   "success": true,
   "projectFilePath": "/Users/terhiraudaskoski/Documents/salt/newAddressBook/newAddressBook.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/terhiraudaskoski/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

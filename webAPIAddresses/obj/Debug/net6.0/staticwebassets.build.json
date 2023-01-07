@@ -1,46 +1,11 @@
 {
   "Version": 1,
-  "Hash": "V+1txDNZxHORJPne4Im/Lmdy1x622zDKPhC6GL1QpUw=",
+  "Hash": "CJ72YzqU4SjUj8zGSE49tP4BHTc4N+mGAGGoMWVD4FM=",
   "Source": "webAPIAddresses",
   "BasePath": "_content/webAPIAddresses",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [
-    {
-      "Identity": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/scopedcss/bundle/webAPIAddresses.styles.css",
-      "SourceId": "webAPIAddresses",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/scopedcss/bundle/",
-      "BasePath": "_content/webAPIAddresses",
-      "RelativePath": "webAPIAddresses.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/scopedcss/bundle/webAPIAddresses.styles.css"
-    },
-    {
-      "Identity": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/scopedcss/projectbundle/webAPIAddresses.bundle.scp.css",
-      "SourceId": "webAPIAddresses",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/scopedcss/projectbundle/",
-      "BasePath": "_content/webAPIAddresses",
-      "RelativePath": "webAPIAddresses.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/scopedcss/projectbundle/webAPIAddresses.bundle.scp.css"
-    }
-  ]
+  "Assets": []
 }

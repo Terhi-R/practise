@@ -8,9 +8,11 @@ public class CreateNew
     [Required]
     public string? Street { get; set; }
     [Required]
-    public int StreetNo { get; set; }
-    [Required]
-    public string? City { get; set; }
+    public int StreetNr { get; set; }
     [Required]
     public int? PostCode { get; set; }
+    [Required]
+    public string? City { get; set; }
+
+    public int? Id { get; set; }
 }

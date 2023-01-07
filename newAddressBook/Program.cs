@@ -3,8 +3,8 @@ using static newAddressBook.Controllers.AddressesController;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var ad = new Addr();
-builder.Services.AddSingleton<Addr>(ad);
+/*var ad = new Addr();
+builder.Services.AddSingleton<Addr>(ad);*/
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -27,7 +27,3 @@
 /Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/webAPIAddresses.genruntimeconfig.cache
 /Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/ref/webAPIAddresses.dll
 /Users/terhiraudaskoski/Documents/salt/webAPIAddresses/bin/Debug/net6.0/webAPIAddresses.staticwebassets.runtime.json
-/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/webAPIAddresses.RazorAssemblyInfo.cache
-/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/webAPIAddresses.RazorAssemblyInfo.cs
-/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/scopedcss/Views/Addresses/Index.cshtml.rz.scp.css
-/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/obj/Debug/net6.0/scopedcss/projectbundle/webAPIAddresses.bundle.scp.css

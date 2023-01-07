@@ -13,4 +13,7 @@ public class CreateNew
     public string? City { get; set; }
     [Required]
     public int? PostCode { get; set; }
+    [Required]
+    public int? Id { get; set; }
+
 }

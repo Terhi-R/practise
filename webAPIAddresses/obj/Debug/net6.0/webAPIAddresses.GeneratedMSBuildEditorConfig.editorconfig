@@ -14,19 +14,3 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /Users/terhiraudaskoski/Documents/salt/webAPIAddresses
 build_property._RazorSourceGeneratorDebug = 
-
-[/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/Views/Addresses/CreateNew.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRkcmVzc2VzL0NyZWF0ZU5ldy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/Views/Addresses/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRkcmVzc2VzL0luZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = b-ab9x2m1ib3

@@ -1,0 +1,61 @@
+.tableRow {
+    background: pink;
+}
+
+.crows {
+    background: rgb(249, 234, 237);
+}
+
+.rows {
+    background: rgb(253, 221, 227);
+}
+
+table {
+    border: 1px solid black;
+    margin: 20px;
+
+}
+
+th, td {
+    padding: 10px;
+}
+
+.links {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    width: 300px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.submit {
+    margin-top: 15px;
+    justify-content: end;
+}
+
+button, a {
+    font-size: 12px;
+    border-radius: 5px;
+    border-color: white;
+    padding: 8px;
+    background: rgb(202, 84, 103);
+    box-shadow: pink;
+    color: white;
+}
+
+button:hover, a:hover {
+    background: white;
+    color: rgb(202, 84, 103);
+    cursor: pointer;
+    border: 1px solid rgb(202, 84, 103);
+}

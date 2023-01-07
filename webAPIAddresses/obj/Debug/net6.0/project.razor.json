@@ -16296,27 +16296,6 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "webAPIAddresses",
-  "Documents": [
-    {
-      "FilePath": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/Views/Addresses/CreateNew.cshtml",
-      "TargetPath": "Views\\Addresses\\CreateNew.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/Views/Addresses/Index.cshtml",
-      "TargetPath": "Views\\Addresses\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/terhiraudaskoski/Documents/salt/webAPIAddresses/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "Documents": [],
   "SerializationFormat": "0.2"
 }

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+
 using newAddressBook.Models;
 
 namespace newAddressBook.Controllers;
@@ -13,9 +14,9 @@ public class AddressesController : ControllerBase
         public Addr()
         {
             Addresses = new List<Address>() {
-            new Address() {Street = "Ospelia", StreetNo = 11, PostCode = 1481, City = "Hagan"},
-            new Address() {Street = "Nedre Slottsgate", StreetNo = 13, PostCode = 1123, City = "Oslo"},
-            new Address() {Street = "Maridalsveien", StreetNo = 54, PostCode = 1222, City = "Oslo"},
+            new Address() {Id = 1, Street = "Ospelia", StreetNr = 11, PostCode = 1481, City = "Hagan"},
+            new Address() {Id = 2, Street = "Nedre Slottsgate", StreetNr = 13, PostCode = 1123, City = "Oslo"},
+            new Address() {Id = 3, Street = "Maridalsveien", StreetNr = 54, PostCode = 1222, City = "Oslo"},
         };
         }
 
@@ -35,17 +36,6 @@ public class AddressesController : ControllerBase
         return _ad.Addresses;
     }
 
-    /*
-        public IActionResult Index()
-        {
-            return View(_ad.Addresses);
-        }
-
-        public IActionResult CreateNew()
-        {
-            return View();
-        }
-    */
     [HttpPost]
     public IActionResult Create(CreateNew createAddress)
     {
@@ -54,23 +44,17 @@ public class AddressesController : ControllerBase
             return BadRequest(ModelState);
         }
 
+        var newId = _ad.Addresses.Count + 1;
+
         var newAddress = new Address()
         {
             Street = createAddress.Street,
-            StreetNo = createAddress.StreetNo,
+            StreetNr = createAddress.StreetNr,
             PostCode = createAddress.PostCode,
-            City = createAddress.City
+            City = createAddress.City,
+            Id = newId
         };
         _ad.Addresses.Add(newAddress);
         return CreatedAtAction(nameof(GetAllAddresses), newAddress);
     }
-
-
-    /*
-        [HttpGet]
-        public Address? Delete(int nr)
-        {
-            return _ad.Addresses.Find(a => a.StreetNo == nr);
-        }
-        */
 }

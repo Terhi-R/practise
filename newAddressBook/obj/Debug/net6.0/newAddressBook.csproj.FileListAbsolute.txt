@@ -26,3 +26,5 @@
 /Users/terhiraudaskoski/Documents/salt/newAddressBook/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/terhiraudaskoski/Documents/salt/newAddressBook/obj/Debug/net6.0/scopedcss/projectbundle/newAddressBook.bundle.scp.css
 /Users/terhiraudaskoski/Documents/salt/newAddressBook/obj/Debug/net6.0/scopedcss/Views/Addresses/Index.cshtml.rz.scp.css
+/Users/terhiraudaskoski/Documents/salt/newAddressBook/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/terhiraudaskoski/Documents/salt/newAddressBook/obj/Debug/net6.0/newAddressBook.csproj.CopyComplete

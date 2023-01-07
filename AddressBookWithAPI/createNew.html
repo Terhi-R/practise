@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Address</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form class="form">
+      <div class="container">
+        <label for="street">Street Name:</label>
+        <input type="text" id="street" name="street" />
+
+        <label for="streetNr">Street Number:</label>
+        <input type="number" id="streetNr" name="streetNr" />
+
+        <label for="postCode">Post Code:</label>
+        <input type="number" id="postCode" name="postCode" />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+
+        <button type="submit" id="submit">Add New Address</button>
+      </div>
+    </form>
+
+    <a href="index.html" class="links">Back to Home</a>
+    <script type="module" src="createNew.js"></script>
+    <script type="text/json" src="script.js"></script>
+  </body>
+</html>

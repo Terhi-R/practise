@@ -6,9 +6,11 @@ public class Address
 {
     public string? Street { get; set; }
 
-    public int StreetNo { get; set; }
+    public int StreetNr { get; set; }
+
+    public int? PostCode { get; set; }
 
     public string? City { get; set; }
 
-    public int? PostCode { get; set; }
+    public int? Id { get; set; }
 }
